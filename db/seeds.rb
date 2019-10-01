@@ -7,7 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Miner.destroy_all
 Jewel.destroy_all
-MinedJewel.destroy_all
 
 rei = Miner.create(
     name: "Rei",

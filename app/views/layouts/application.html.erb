@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>JewelMinerCodeChallenge</title>
+    <title>Jewel Miner Code Challenge</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css">
   </head>
 
   <body>
-    <%= yield %>
+    <nav>
+      💎
+      <%= link_to "See All Jewels", jewels_path %> 💎
+      <%= link_to "See All Miners", miners_path %> 💎
+    </nav>
+    <div class='box'>
+      <%= yield %>
+    </div>
   </body>
 </html>
