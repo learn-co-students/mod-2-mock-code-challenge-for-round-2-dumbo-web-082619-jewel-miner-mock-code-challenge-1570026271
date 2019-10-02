@@ -1,0 +1,11 @@
+<h1>Mine a New Jewel</h1>
+
+<%= form_for @mined_jewel do |f| %>
+<%= f.label :miner_id, "Who are you?" %>
+<%= f.collection_select :miner_id, Miner.all, :id, :name %>
+
+<%= f.label :miner_id, "What did you mine?" %>
+<%= f.collection_select :jewel_id, Jewel.all, :id, :name %>
+
+<%= f.submit "Mine that Jewel!" %>
+<% end %>

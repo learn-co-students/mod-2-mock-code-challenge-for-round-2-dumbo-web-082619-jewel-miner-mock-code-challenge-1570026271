@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_01_214327) do
+ActiveRecord::Schema.define(version: 2019_10_02_181506) do
 
   create_table "jewels", force: :cascade do |t|
     t.string "name"
@@ -18,6 +18,15 @@ ActiveRecord::Schema.define(version: 2019_10_01_214327) do
     t.string "img_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "mined_jewels", force: :cascade do |t|
+    t.integer "miner_id"
+    t.integer "jewel_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["jewel_id"], name: "index_mined_jewels_on_jewel_id"
+    t.index ["miner_id"], name: "index_mined_jewels_on_miner_id"
   end
 
   create_table "miners", force: :cascade do |t|

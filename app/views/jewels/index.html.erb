@@ -1,7 +1,7 @@
 <h1>Jewel Index</h1>
 <% @jewels.each do |jewel| %>
 <li>
-    <%= image_tag jewel.img_url, alt: "Image of #{jewel.name}", class:"jewel-icon" %>
-    <%= jewel.name %>
+    <%= image_tag jewel.img_url, alt: "Image of #{jewel.name}", class: "jewel-icon" %>
+    <%= link_to jewel.name, jewel_path(jewel) %>
 </li>
 <% end %>

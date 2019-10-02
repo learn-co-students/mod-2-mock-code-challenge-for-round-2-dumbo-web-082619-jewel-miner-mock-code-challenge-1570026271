@@ -1,0 +1,26 @@
+<h1>
+    My name is <%= @miner.name %>.
+</h1>
+<h3>
+    Favorite Color: <%= @miner.fave_color %>
+</h3>
+
+<h2>My Jewels:</h2>
+<table>
+    <thead>
+        <th></th>
+        <th>Jewel Name</th>
+    </thead>
+    <tbody>
+        <% @miner.jewels.each do |jewel| %>
+        <tr>
+            <td>
+                <%= image_tag jewel.img_url, alt: "Image of #{jewel.name}", class: "jewel-icon" %>
+            </td>
+            <td>
+                <%= link_to jewel.name, jewel_path(jewel) %>
+            </td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>

@@ -2,7 +2,7 @@
 <ul>
     <% @miners.each do |miner| %>
     <li>
-        <%= miner.name %>
+        <%= link_to miner.name, miner_path(miner) %>
     </li>
     <% end  %>
 </ul>

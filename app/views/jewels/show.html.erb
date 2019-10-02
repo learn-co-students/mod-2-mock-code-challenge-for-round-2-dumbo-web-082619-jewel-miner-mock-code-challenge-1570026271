@@ -1,0 +1,16 @@
+<%= image_tag @jewel.img_url, alt: "Image of #{@jewel.name}" %>
+<h1>
+    <%= @jewel.name %>
+</h1>
+<h2>
+    Color: <%= @jewel.color %>
+</h2>
+
+<h3>
+    Users who own this kind of jewel:
+</h3>
+<% @miners.each do |miner| %>
+<li>
+    <%= link_to miner.name, miner_path(miner) %>
+</li>
+<% end %>

@@ -1,0 +1,21 @@
+<h1>
+    Register a New Miner
+</h1>
+
+<%= form_for @miner do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.label :fave_color %>
+<%= f.text_field :fave_color %>
+
+<%= f.submit %>
+<% end  %>
+
+<% if flash[:errors] %>
+<% flash[:errors].each do |error| %>
+<li style="color:red;">
+    <%= error %>
+</li>
+<% end  %>
+<% end  %>
