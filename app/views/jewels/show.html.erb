@@ -1,0 +1,13 @@
+
+<h1> Thanks Leizel.  This was very cool of you <h1>
+
+<h2 > <%= @jewel.name %> </h2>
+
+<p style="color: <%=@jewel.color%>"> My color is <%=@jewel.color%> </p>
+
+<% @jewel.miners.each do |miner| %>
+    <ul>
+    <li><%= link_to miner, miner_path(miner)%> <li>
+    <%end%>
+
+    <ul>

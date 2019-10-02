@@ -1,0 +1,2 @@
+class JewelryboxesController < ApplicationController
+end

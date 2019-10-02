@@ -1,0 +1,14 @@
+
+
+<% thanks = "Thanks LEIZEL  "%>
+
+<marquee> <%= thanks * 100%></marquee>
+
+
+<%=form_for(@miner) do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :fave_color %>
+    <%= f.text_field :fave_color %>
+    <%= f.submit %>
+<% end %>
