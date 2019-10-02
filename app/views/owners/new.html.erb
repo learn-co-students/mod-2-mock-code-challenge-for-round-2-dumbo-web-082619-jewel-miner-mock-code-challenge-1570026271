@@ -1,0 +1,5 @@
+<%= form_for @owner do |f|%>
+<%=collection_select :miner, :miner_id ,Miner.all, :id, :name %>
+<%=collection_select :jewel,:jewel_id, Jewel.all, :id, :name %>
+<%=f.submit%>
+<%end%>
