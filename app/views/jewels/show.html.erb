@@ -1,0 +1,13 @@
+<h1><%= @jewel.name %></h1>
+<p>
+Color: <%= @jewel.color %>
+</p>
+
+<h3>Mined By:</h3>
+<ul>
+    <% @jewel.miners.each do |miner| %>
+    <li>
+        <%= miner.name %>
+    </li>
+    <% end  %>
+</ul>

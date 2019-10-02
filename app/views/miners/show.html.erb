@@ -1,0 +1,13 @@
+<h1><%= @miner.name %></h1>
+<p>
+Favorite color: <%= @miner.fave_color %>
+</p>
+
+<h3><%= @miner.name %>'s Jewels</h3>
+<ul>
+    <% @miner.jewels.each do |jewel| %>
+    <li>
+        <%= jewel.name %>
+    </li>
+    <% end  %>
+</ul>

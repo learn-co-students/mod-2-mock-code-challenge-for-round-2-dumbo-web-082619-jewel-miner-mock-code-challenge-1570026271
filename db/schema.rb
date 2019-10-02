@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_01_214327) do
+ActiveRecord::Schema.define(version: 2019_10_02_163414) do
+
+  create_table "collections", force: :cascade do |t|
+    t.integer "miner_id"
+    t.integer "jewel_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "jewels", force: :cascade do |t|
     t.string "name"
@@ -18,6 +25,7 @@ ActiveRecord::Schema.define(version: 2019_10_01_214327) do
     t.string "img_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "miner_id"
   end
 
   create_table "miners", force: :cascade do |t|
@@ -25,6 +33,7 @@ ActiveRecord::Schema.define(version: 2019_10_01_214327) do
     t.string "fave_color"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "jewel_id"
   end
 
 end
