@@ -47,9 +47,9 @@ You should be able to run `rails s` and view the seeded data on the index pages.
 # Bonus Deliverables
 Nice job! Want to push yourself to the limit? Run `git add .` and `git commit -m "done with main deliverables"`, then try the below!
 ### Update
-4. Add an Edit button to a Miner's show page, which allows you to edit a miner.
+8. Add an Edit button to a Miner's show page, which allows you to edit a miner.
 
 ### Special
-5. On the Miner show page, refactor it so that their list of owned jewels shows how many of each jewel they own.
+9. On the Miner show page, refactor it so that their list of owned jewels shows how many of each jewel they own.
 *Ex. Emerald x2, Topaz x1, Garnet x1* (instead of Emerald, Topaz, Emerald, Garnet)
-6. Display a miner's owned jewels on a table.
+10. Display a miner's owned jewels on a table.
