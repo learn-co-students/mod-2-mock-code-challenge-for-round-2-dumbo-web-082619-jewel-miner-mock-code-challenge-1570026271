@@ -1,0 +1,2 @@
+module MinersJewelsHelper
+end

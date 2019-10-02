@@ -1,0 +1,4 @@
+<%= form_for @mj do |f|%>
+    <%= f.label :jewel_id %>
+    <%= f.collection_select(:jewel_id, Jewel.all, :id, :name) %>
+<%end%>
