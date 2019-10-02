@@ -10,10 +10,8 @@
 <marquee> <%= thanks * 100%></marquee>
 
 
-<%=form_for(@miner) do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-    <%= f.label :fave_color %>
-    <%= f.text_field :fave_color %>
+<%=form_for(@jewelrybox) do |f| %>
+    <%= f.collection_select(:miner_id, Miner.all, :id, :name)%>
+    <%= f.collection_select(:jewel_id, Jewel.all, :id, :name)%>
     <%= f.submit %>
 <% end %>
