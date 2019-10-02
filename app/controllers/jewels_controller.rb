@@ -1,5 +1,10 @@
 class JewelsController < ApplicationController
     def index
-        @jewels = Jewel.order(:name)
+        @jewels = Jewel.all
     end
+
+    def show
+        @jewel = Jewel.find(params[:id])
+    end
+    
 end

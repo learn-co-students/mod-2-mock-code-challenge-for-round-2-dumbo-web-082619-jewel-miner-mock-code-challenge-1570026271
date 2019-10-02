@@ -1,6 +1,7 @@
 # Remove all existing Miners and Jewels
 Miner.destroy_all
 Jewel.destroy_all
+Stash.destroy_all
 
 # Create Miners
 rei = Miner.create(
@@ -71,6 +72,13 @@ sapphire = Jewel.create(
     color: "blue",
     img_url: "https://cdn1.iconfinder.com/data/icons/crystal-1/60/blue_crystal-512.png"
 )
+
+stash1 = Stash.create(miner_id: 1, jewel_id: 1)
+stash2 = Stash.create(miner_id: 2, jewel_id: 2)
+stash3 = Stash.create(miner_id: 3, jewel_id: 3)
+stash4 = Stash.create(miner_id: 4, jewel_id: 4)
+stash5 = Stash.create(miner_id: 5, jewel_id: 5)
+
 
 # Done
 puts "Seeded."

@@ -2,6 +2,6 @@
 <% @jewels.each do |jewel| %>
 <li>
     <%= image_tag jewel.img_url, alt: "Image of #{jewel.name}", class:"jewel-icon" %>
-    <%= jewel.name %>
+    <%= link_to jewel.name, jewel_path %>
 </li>
 <% end %>

@@ -1,0 +1,5 @@
+  <h1>Create a New Stash</h1>
+  
+  <%= collection_select(:stash, :miner_id, Miner.all, :id) %>
+  <%= collection_select(:stash, :jewel_id, Jewel.all, :id) %>
+

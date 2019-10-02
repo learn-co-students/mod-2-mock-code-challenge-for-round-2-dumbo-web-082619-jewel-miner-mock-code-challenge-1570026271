@@ -16,16 +16,16 @@ We currently have two models: **Miner** and **Jewel**. A miner can have many jew
 
 # Deliverables
 ### Associations
-1. Create the associations between models. You may have to alter the current schema to get your code working. After you've set up your relationships properly, you should be able to run `rails db:migrate`.
+<!-- 1. Create the associations between models. You may have to alter the current schema to get your code working. After you've set up your relationships properly, you should be able to run `rails db:migrate`.
 
  You can next run `rails db:seed`, though you may want to add more seed data before doing so. We only provide you miners and jewels, but not any associations between them.
 
-You should be able to run `rails s` and view the seeded data on the index pages.
+You should be able to run `rails s` and view the seeded data on the index pages. -->
 
 ### Read
-2. On the miners index page, a miner's name should link to their show page.
-3. The miner show page should include:
-    - Name
+<!-- 2. On the miners index page, a miner's name should link to their show page. -->
+<!-- 3. The miner show page should include:
+    - Name -->
     - Favorite color
     - All owned jewels (ex. Emerald, Emerald, Garnet, Emerald, Topaz)
     - Each jewel listed should link to the jewel's show page
