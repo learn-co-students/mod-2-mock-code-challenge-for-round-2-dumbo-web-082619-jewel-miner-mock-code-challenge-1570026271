@@ -1,0 +1,11 @@
+<h1> <%= @miners.name %> </h1>
+<h2> <%= "Favorite Color:" %> </h2>
+<br>
+<%= @miners.fave_color %>
+
+  <h3> <%= "Jewels Owned" %> </h3>
+   
+    <% @miners.jewels.each do |jewel| %>
+        <%= link_to jewel.name, jewel_path(jewel.id) %>
+        <% end %>
+

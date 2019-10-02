@@ -72,5 +72,12 @@ sapphire = Jewel.create(
     img_url: "https://cdn1.iconfinder.com/data/icons/crystal-1/60/blue_crystal-512.png"
 )
 
+Mining.create(miner_id: rei.id, jewel_id: sapphire.id)
+Mining.create(miner_id: rei.id, jewel_id: diamond.id)
+Mining.create(miner_id: rei.id, jewel_id: diamond.id)
+Mining.create(miner_id: rei.id, jewel_id: diamond.id)
+Mining.create(miner_id: eric.id, jewel_id: diamond.id)
+Mining.create(miner_id: ian.id, jewel_id: peridot.id)
+Mining.create(miner_id: leizl.id, jewel_id: amethyst.id)
 # Done
 puts "Seeded."
