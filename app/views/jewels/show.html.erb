@@ -5,9 +5,10 @@
 
 <p style="color: <%=@jewel.color%>"> My color is <%=@jewel.color%> </p>
 
+<p>miner who own this jewel listed below</p>
 <% @jewel.miners.each do |miner| %>
     <ul>
-    <li><%= link_to miner, miner_path(miner)%> <li>
+    <%= link_to miner.name, miner_path(miner)%></br>
     <%end%>
 
     <ul>
