@@ -1,0 +1,5 @@
+<h1>Treasures#new</h1>
+
+<%= form_with treasures: @treasure do |treasure_form| %>
+  <%= treasure_form.collection_select(:user_id, Users.all, :jewel_id, Jewels.all) %>
+<% end %>
