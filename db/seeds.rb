@@ -1,13 +1,8 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# Remove all existing Miners and Jewels
 Miner.destroy_all
 Jewel.destroy_all
 
+# Create Miners
 rei = Miner.create(
     name: "Rei",
     fave_color: "blue"
@@ -20,7 +15,7 @@ ian = Miner.create(
 
 eric = Miner.create(
     name: "Eric",
-    fave_color: "green"
+    fave_color: "red"
 )
 
 leizl = Miner.create(
@@ -28,6 +23,7 @@ leizl = Miner.create(
     fave_color: "white"
 )
 
+# Create Jewels
 emerald = Jewel.create(
     name: "Emerald",
     color: "green",
@@ -76,4 +72,5 @@ sapphire = Jewel.create(
     img_url: "https://cdn1.iconfinder.com/data/icons/crystal-1/60/blue_crystal-512.png"
 )
 
+# Done
 puts "Seeded."
