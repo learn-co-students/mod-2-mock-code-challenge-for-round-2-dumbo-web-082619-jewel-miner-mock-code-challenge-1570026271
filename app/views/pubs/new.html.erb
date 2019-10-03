@@ -1,0 +1,10 @@
+<h1>Pubs#new</h1>
+<p>Find me in app/views/pubs/new.html.erb</p>
+
+<%= form_for @pub do |f|%>
+    <%= f.label :miner_id%>
+    <%= f.collection_select :miner_id, Miner.all, :id, :name%>
+    <%= f.label :jewel_id%>
+    <%= f.collection_select :jewel_id, Jewel.all, :id, :name%>
+    <%= f.submit%>
+<%end%>

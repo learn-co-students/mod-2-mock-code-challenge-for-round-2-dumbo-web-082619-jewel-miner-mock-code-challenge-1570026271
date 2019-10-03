@@ -1,0 +1,9 @@
+<%= @miner.name %>'s Profile!
+
+<h3> Favorite Color:</h3> <%= @miner.fave_color%>
+
+<h3> <%= @miner.name %>'s Jewels </h3>
+
+<% @miner.pubs.each do |pub| %>
+<%= link_to pub.jewel.name , jewel_path, method: :get %>
+<% end %>

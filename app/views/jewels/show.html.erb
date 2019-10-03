@@ -1,0 +1,9 @@
+<h1> Jewel Name: <%= @jewel.name %> </h1>
+
+<h2> Jewel's Color </h2>
+<%= @jewel.color %>
+
+<h3> Miner Who Own <%= @jewel.name %> : </h3>
+<% @jewel.miners.each do |miner| %>
+  <%=link_to miner.name, miner_path, methos: :get %>
+<% end %>

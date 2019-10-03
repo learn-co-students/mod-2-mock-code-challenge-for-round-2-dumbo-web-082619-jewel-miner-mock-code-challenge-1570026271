@@ -16,31 +16,31 @@ We currently have two models: **Miner** and **Jewel**. A miner can have many jew
 
 # Deliverables
 ### Associations
-1. Create the associations between models. You may have to alter the current schema to get your code working. After you've set up your relationships properly, you should be able to run `rails db:migrate`.
+<!-- 1. Create the associations between models. You may have to alter the current schema to get your code working. After you've set up your relationships properly, you should be able to run `rails db:migrate`.
 
  You can next run `rails db:seed`, though you may want to add more seed data before doing so. We only provide you miners and jewels, but not any associations between them.
 
-You should be able to run `rails s` and view the seeded data on the index pages.
+You should be able to run `rails s` and view the seeded data on the index pages. -->
 
 ### Read
-2. On the miners index page, a miner's name should link to their show page.
-3. The miner show page should include:
-    - Name
-    - Favorite color
-    - All owned jewels (ex. Emerald, Emerald, Garnet, Emerald, Topaz)
-    - Each jewel listed should link to the jewel's show page
-4. On the jewels index page, a jewel's name should link to its show page.
-5. The jewel show page should include:
-    - Name
-    - Color
-    - A *unique* list of all miners who own the jewel
-    - Each listed miner's name should link to their show page
+<!-- 2. On the miners index page, a miner's name should link to their show page. -->
+<!-- 3. The miner show page should include: -->
+    <!-- - Name -->
+    <!-- - Favorite color -->
+    <!-- - All owned jewels (ex. Emerald, Emerald, Garnet, Emerald, Topaz) -->
+    <!-- - Each jewel listed should link to the jewel's show page -->
+<!-- 4. On the jewels index page, a jewel's name should link to its show page.
+5. The jewel show page should include: -->
+    <!-- - Name -->
+    <!-- - Color -->
+    <!-- - A *unique* list of all miners who own the jewel -->
+    <!-- - Each listed miner's name should link to their show page -->
 
-### Create
+<!-- ### Create
 6. Be able to have a miner own a new jewel.
     - The miner is chosen from a dropdown menu
     - The jewel is chosen from a dropdown menu
-    - Note that a miner can own duplicate jewels
+    - Note that a miner can own duplicate jewels -->
 7. Be able to create a new miner.
     - Miner name **cannot be blank** and should be **unique**
 
